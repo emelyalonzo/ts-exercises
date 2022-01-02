@@ -32,8 +32,7 @@ const sortCategory = (array: Movie[]) => {
     }
     return result;
 }
-console.log(sortByCategory(movies));
-
+console.log(sortCategory(movieNames));
 //#2
 interface UserMovies {
     name: string, 
@@ -83,7 +82,7 @@ const averageSound = (array: UserMovies[]) => {
     }
     return console.log("The average volume of the users is: " + result.total / result.count);
 }
-averageSounds(userObjects);
+averageSound(userObjects);
 
 //#3
 const userObjectsTwo: UserMovies[] = [
